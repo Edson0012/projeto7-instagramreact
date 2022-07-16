@@ -1,13 +1,15 @@
-import Header from "./Header";
-import Main from "./main/Main";
+import Topo from "./topo/Topo";
+import Main from "./corpo/Main";
+import Mobile from "./Mobile";
 
 export default App;
 
 function App() {
     return (
         <>
-            <Header />
+            <Topo />
             <Main />
+            <Mobile />
         </>
     );
 }
