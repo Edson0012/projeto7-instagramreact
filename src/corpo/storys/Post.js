@@ -17,7 +17,10 @@ function Post(props) {
             </div>
 
             <div className="conteudo">
-                <img src="./assets/img/gato-telefone.svg" />
+                <img
+                    onClick={() => setLike(!like)}
+                    src="./assets/img/gato-telefone.svg"
+                />
             </div>
 
             <div className="fundo">
@@ -25,7 +28,7 @@ function Post(props) {
                     <div>
                         {like ? (
                             <ion-icon
-                                className="red-heart"
+                                color="danger"
                                 name="heart"
                                 onClick={() => setLike(!like)}
                             ></ion-icon>
